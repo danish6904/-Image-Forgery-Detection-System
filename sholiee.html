@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./styles.css">
+    <style>
+        .buttons {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        #noButton {
+            position: absolute;
+        }
+
+        #yesButton {
+            position: absolute;
+        }
+
+        .popup {
+            display: none;
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-color: white;
+            border: 1px solid black;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        .popup .popup-content {
+            margin-bottom: 10px;
+        }
+
+        .gif_display {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1 class="header_text">Hey my love...I am so sorry...please na mau....noko na asa rahu... mla chhon nahi vatate Tu bolnaar na I LOBE YU mala   🥺
+            </h1>
+        </div>
+        <div class="gif_container">
+            <img src="https://i.pinimg.com/originals/f6/92/a4/f692a46c3719088b04866108370a5e1c.gif" alt="Cute animated illustration">
+        </div>
+        <div class="gif_container">
+            <img src="https://media.tenor.com/SFy5Za0DyMEAAAAj/erm-fingers.gif" alt="Cute animated illustration">
+        </div>
+        
+        <div class="buttons">
+            <button class="btn" id="yesButton" onclick="goToYesPage()" style="left: 10px; top: 10px;">Yes</button>
+            <button class="btn" id="noButton" onmouseover="moveButton()" onclick="showPopup()" style="left: 100px; top: 10px;">No</button>
+            <div>
+            <p>
+                .<br>
+                .<br>
+                .<br>
+                .<br>
+
+                    SHOLIEE<br>
+                   
+                    SHOLIEE<br>
+                    SHOLIEE<br>
+                    SHOLIEE<br>
+                    SHOLIEE<br>
+                    SHOLIEE<br>
+                    SHOLIEE<br>
+                    SHOLIEE<br>
+                    SHOLIEE<br>
+                    SHOLIEE<br>
+                    SHOLIEE<br>
+                    SHOLIEE<br>
+                    SHOLIEE<br>
+                    SHOLIEE<br>
+                    SHOLIEE<br>
+                    SHOLIEE<br>
+                
+                    SHOLIEE<br>
+                    SHOLIEE<br>
+                    SHOLIEE<br>
+                    SHOLIEE<br>
+                    SHOLIEE<br>
+                    SHOLIEE<br>
+                    SHOLIEE<br>
+                    SHOLIEE<br>
+                    SHOLIEE<br>
+                    SHOLIEE<br>
+                    SHOLIEE<br>
+                    SHOLIEE<br>
+                    SHOLIEE<br>
+                    SHOLIEE<br>
+                    SHOLIEE<br>
+                    SHOLIEE<br>
+                    SHOLIEE<br>
+                    SHOLIEE<br>
+                    SHOLIEE<br>
+                    SHOLIEE<br>
+                    SHOLIEE<br>
+                    SHOLIEE<br>
+                    SHOLIEE<br>
+                    SHOLIEEEEEEEEEEEE NAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 🥺🥺🥺🥺<br>
+
+
+            </p>
+        </div>
+            <button class="btn" id="yesButton" onclick="goToNOOPage()" style="left: 10px; top: 900px;">NOO</button>
+        </div>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">Please forgive me 🥺</div>
+        <button onclick="noAgain()">No</button>
+        <button onclick="thankie()">Thankie</button>
+    </div>
+
+    <div class="gif_display">
+        <img id="thankieGif" src="https://media.tenor.com/SFy5Za0DyMEAAAAj/erm-fingers.gif" alt="Thankie Gif">
+    </div>
+
+    <script>
+        function goToYesPage() {
+            window.location.href = "https://media.tenor.com/9VRSMbE8FJwAAAAi/milk-and-mocha-love-you.gif"; // Replace with your desired Yes URL
+        }
+        function goToNOOPage() {
+            window.location.href = "https://gifdb.com/images/high/milk-and-mocha-i-am-sorry-4t6uype5kdct4fxo.gif"; // Replace with your desired Yes URL
+        }
+
+        function goToNoPage() {
+            window.location.href = ""; // Replace with your desired No URL
+        }
+
+        function moveButton() {
+            var button = document.getElementById('noButton');
+            button.style.left = (Math.random() * 90) + '%';
+            button.style.top = (Math.random() * 90) + '%';
+        }
+
+        function showPopup() {
+            document.getElementById('popup').style.display = 'block';
+        }
+
+        function noAgain() {
+            alert("Please forgive me 🥺");
+        }
+
+        function thankie() {
+            document.getElementById('popup').style.display = 'none';
+            document.querySelector('.gif_display').style.display = 'block';
+        }
+
+
+        
+    </script>
+</body>
+</html>
